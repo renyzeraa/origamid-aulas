@@ -12,4 +12,4 @@ var fraseNome = `${nome} ${sobrenome}`
 // Coloque a seguinte frase em uma variável: It's time
 var frase1 = "It's time"
 // Verifique o tipo da variável que contém o seu nome
-console.log(nome)
+console.log(typeof nome)
