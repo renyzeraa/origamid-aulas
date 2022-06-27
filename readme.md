@@ -2,15 +2,15 @@
 
 ## O CURSO
 
--[] JavaScript Completo ES6+
+-[ ] JavaScript Completo ES6+
 
 var, const, let, class, async, await, fetch, promise e mais
 
--[] Pré-requisitos
+-[ ] Pré-requisitos
 
 HTML / CSS
 
--[] Ferramentas
+-[ ] Ferramentas
 
 Visual Studio Code, Node.js, NPM e Git
 
@@ -20,57 +20,57 @@ https://origamid.github.io/animais-fantasticos/
 
 ## GRADE
 
--[] Introdução
+-[ ] Introdução
 
 Sobre a linguagem e configuração o ambiente.
 
--[] JavaScript para Iniciantes
+-[ ] JavaScript para Iniciantes
 
 Dados, variáveis, operadores, boolean, funções, objetos, arrays, loops e mais.
 
--[] DOM para Iniciantes
+-[ ] DOM para Iniciantes
 
 Início do projeto, selecionar e manipular o dom, eventos, traversing e mais.
 
 ## GRADE
 
--[] Objetos
+-[ ] Objetos
 
 Constructor functions, prototype, String, Array, Math, Number, Function, Object.
 
--[] Efeitos no DOM
+-[ ] Efeitos no DOM
 
 Modules, event bubble, setTimeout, forms e mais.
 
--[] JavaScript Assíncrono
+-[ ] JavaScript Assíncrono
 
 Promises, Fetch (novo AJAX), JSON, API, HTTP, Async / Await e mais.
 
 ## GRADE
 
--[] Classes
+-[ ] Classes
 
 Class, constructor, get, set, extends e mais.
 
--[] Mais JavaScript
+-[ ] Mais JavaScript
 
 IIFE, factory function, clojures, debugging, destructuring, rest, iterables.
 
--[] Regular Expression
+-[ ] Regular Expression
 
 Principais padrões e métodos.
 
 ## GRADE
 
--[] Automação Front End
+-[ ] Automação Front End
 
 CLI, NPM, ESLint, Webpack, Babel e Git.
 
--[] Projeto Final
+-[ ] Projeto Final
 
 Refatoração do projeto utilizando classes. Praticando com Git, ESLint e mais.
 
--[] Slide
+-[ ] Slide
 
 Criação do plugin de slide.
 
