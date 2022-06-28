@@ -1,6 +1,7 @@
 // Mostre no console cada parágrado do site
 const paragrafo = document.querySelectorAll('p')
 console.log(paragrafo)
+
 // Mostre o texto dos parágrafos no console
 paragrafo.forEach(texto => console.log(texto.innerHTML))
 
@@ -17,5 +18,4 @@ imgs.forEach(() => {
 })
 
 imgs.forEach(() => i++)
-
 // colocando os parenteses
