@@ -1,6 +1,6 @@
-# Arquivos usados para estudo
+# JavaScript para Iniciantes
 
-## Curso Origamid - Front-end
+Dados, variáveis, operadores, boolean, funções, objetos, arrays, loops e mais.
 
 ## Contato
 
