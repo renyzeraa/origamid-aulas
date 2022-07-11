@@ -1,11 +1,13 @@
-const aulas = [10, 25, 30]
-const total1 = aulas.reduce((acumulador, atual) => {
-  return acumulador + atual
-}, 0)
-total1 // 65
+const numeros = [10, 25, 60, 5, 35, 10]
 
-const total2 = aulas.reduce((acc, cur) => acc + cur, 100)
-total2 // 165
+const maiorValor = numeros.reduce((anterior, atual) => {
+  return anterior < atual ? atual : anterior
+})
 
-console.log(total1)
-console.log(total2)
+const menorValor = numeros.reduce((anterior, atual) => {
+  return anterior > atual ? atual : anterior
+})
+
+maiorValor // 60
+console.log(maiorValor)
+console.log(menorValor)
