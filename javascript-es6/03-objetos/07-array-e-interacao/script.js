@@ -1,7 +1,11 @@
-const carros = ['Ford', 'Fiat', 'Honda']
+const aulas = [10, 25, 30]
+const total1 = aulas.reduce((acumulador, atual) => {
+  return acumulador + atual
+}, 0)
+total1 // 65
 
-// com Arrow Function
-carros.forEach((item, index, array) => {
-  console.log(item, index, array)
-  // console.log(item.toUpperCase())
-})
+const total2 = aulas.reduce((acc, cur) => acc + cur, 100)
+total2 // 165
+
+console.log(total1)
+console.log(total2)
