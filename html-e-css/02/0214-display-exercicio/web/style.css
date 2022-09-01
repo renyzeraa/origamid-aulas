@@ -1,22 +1,30 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial;
-  margin: 50px;
+}
+body {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 h1 {
+  margin: 40px 0 20px;
   text-align: center;
 }
 
-h2 {
-  margin: 0px;
+.content {
+  background: #111;
+  padding: 30px;
+  color: white;
+  margin-bottom: 15px;
+  border-radius: 5px;
 }
 
-.item {
-  background: #111;
-  color: #fff;
-  padding: 30px;
-  margin: 20px;
-  border-radius: 4px;
+h2 {
+  margin-bottom: 10px;
 }
 
 span {
@@ -25,13 +33,15 @@ span {
 
 p {
   color: #b2b2b2;
+  margin-bottom: 10px;
 }
 
 a {
   display: inline-block;
-  background: #febe01;
+  background-color: #febe01;
   color: #332200;
-  padding: 10px;
+  border: none;
+  padding: 10px 15px;
   border-radius: 4px;
-  text-decoration: none;
+  cursor: pointer;
 }
