@@ -31,5 +31,5 @@ h2 {
   height: 800px;
   grid-template-columns: auto auto;
   gap: 20px;
-  place-content: start;
+  place-content: center;
 }
