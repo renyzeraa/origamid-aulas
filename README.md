@@ -2,6 +2,10 @@
 
 ## Curso Origamid - Front-end
 
+- Css Flex-box
+- Html + Css
+- JavaScript ES6+
+
 ## Contact
 
 <img align="left" src="https://avatars.githubusercontent.com/renyzeraa?size=100">
