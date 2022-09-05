@@ -22,3 +22,9 @@ h1 {
   position: relative;
   z-index: 999999;
 }
+
+.index4 {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
