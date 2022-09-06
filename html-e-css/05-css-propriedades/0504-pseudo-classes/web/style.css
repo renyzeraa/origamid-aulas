@@ -6,6 +6,7 @@ a {
   text-decoration: none;
   background: #caf;
   color: #217;
+  transition: 0.5s;
 }
 
 a:hover {
