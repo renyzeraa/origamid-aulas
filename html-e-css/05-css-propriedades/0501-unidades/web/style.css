@@ -1,10 +1,37 @@
-body {
-  margin: 0px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-div {
+/* html {
+  font-size: 62.5%;
+} */
+
+a {
+  text-decoration: none;
+  color: white;
+  background-color: blue;
+  font-size: 24px;
+  display: inline-block;
+}
+
+p {
+  background-color: lightblue;
+}
+
+.px {
+  font-size: 24px;
+  padding: 16px 32px;
+}
+
+.rem {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.vw-e-vh {
   background: lightblue;
   width: calc(100vw - 100px);
-  height: 100vh;
-  /* height: 100vh; */
+  height: 50vh;
 }
