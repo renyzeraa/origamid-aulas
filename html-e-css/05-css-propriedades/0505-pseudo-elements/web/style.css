@@ -1,5 +1,5 @@
 h1::after {
-  content: "";
+  content: '';
   display: block;
   width: 40px;
   height: 4px;
@@ -17,7 +17,7 @@ li {
 }
 
 li::before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 8px;
   height: 8px;

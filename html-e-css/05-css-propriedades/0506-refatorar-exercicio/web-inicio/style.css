@@ -1,11 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+/* geral */
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0px;
+  font-family: 'Roboto Mono', monospace;
   background: #f7f7f7;
   display: grid;
-  gap: 60px;
+  gap: 6rem;
   justify-items: center;
-  margin-top: 60px;
 }
 
 img {
@@ -13,90 +23,153 @@ img {
   display: block;
 }
 
+main {
+  margin-top: 6rem;
+  width: 90rem;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
 }
 
 p,
-h1,
-h2,
-h3 {
-  margin: 0px;
-}
-
-p {
-  font-size: 20px;
+a {
+  font-size: 1.8rem;
   line-height: 1.3;
 }
 
-.menu {
+/* menu nav */
+
+header {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 4.8rem 0 0;
 }
 
-.menu a {
+header .logo-bikcraft {
+  width: 16rem;
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 4.8rem 0 0;
+}
+
+.menu ul li a {
+  font-size: 2rem;
+  cursor: pointer;
   background: #ffffff;
-  padding: 15px 30px;
+  padding: 1.5rem 3rem;
   border-radius: 4px;
   color: #000000;
   text-transform: uppercase;
+  display: block;
+  border: 2px solid #ffffff;
 }
+
+.menu ul li a:hover {
+  border: 2px solid red;
+}
+
+/* content */
 
 .conteudo {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 1000px;
+  max-width: 100rme;
 }
 
 .introducao {
   background: #fff;
-  padding: 40px;
+  padding: 4rem;
   text-align: right;
   position: relative;
   display: grid;
-  gap: 20px;
+  gap: 2rem;
   align-content: center;
   justify-items: end;
 }
 
-.detalhe {
-  width: 60px;
+.introducao h1 {
+  font-size: 2.5rem;
+}
+
+.introducao h1::before {
+  content: '';
+  width: 6rem;
   height: 4px;
   background: #e21;
   position: absolute;
-  top: 30px;
-  right: -30px;
+  top: 3rem;
+  right: -3rem;
 }
 
 .botao {
   background: #e21;
   color: #fff;
-  padding: 15px 30px;
+  padding: 1.5rem 3rem;
   border-radius: 4px;
   text-transform: uppercase;
 }
 
-.subtitulo {
-  font-size: 64px;
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.2);
-  text-align: right;
-  padding: 40px;
+.botao:hover {
+  transition: 0.4s;
+  background: rgb(138, 20, 10);
+}
+
+.bikes {
+  background-image: url('./img/bicicleta.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
   align-self: center;
+}
+
+.title .subtitulo {
+  font-size: 6.4rem;
+  text-transform: uppercase;
+  color: rgb(165, 165, 165);
+  text-align: right;
+  padding: 4rem;
+  align-self: center;
+  text-shadow: 6px 4px 15px rgba(0, 0, 0, 0.466);
 }
 
 .vantagens {
   background: #fff;
-  padding: 40px;
+  padding: 4rem;
 }
 
 .vantagens-item {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 10px 20px;
-  padding: 20px;
+  gap: 1rem 2rem;
+  padding: 2rem;
+  border-left: 3px solid transparent;
+}
+
+.vantagens-item:nth-child(odd) {
+  background-color: #ebebeb9d;
+}
+
+.vantagens-item:hover {
+  border-color: red;
+}
+
+.vantagens-item h3 {
+  font-size: 1.8rem;
 }
 
 .vantagens-item p {
@@ -107,6 +180,6 @@ p {
   background: #fff;
   width: 100%;
   text-align: center;
-  padding: 40px;
+  padding: 4rem;
   box-sizing: border-box;
 }
