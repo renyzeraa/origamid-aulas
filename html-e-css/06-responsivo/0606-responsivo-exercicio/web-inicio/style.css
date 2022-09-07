@@ -6,6 +6,7 @@ body {
   justify-items: center;
   margin-top: 60px;
   background-color: #f7f7f7;
+  padding: 0 24px;
 }
 
 img {
@@ -64,8 +65,15 @@ p {
 
 .conteudo {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   max-width: 1000px;
+}
+.introducao-img img {
+  max-width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .introducao {
@@ -113,6 +121,7 @@ p {
   padding: 40px;
   align-self: center;
   background-image: url('./img/onda.svg');
+  word-break: break-all;
 }
 
 .vantagens {
@@ -146,4 +155,34 @@ p {
   text-align: center;
   padding: 40px;
   box-sizing: border-box;
+}
+
+@media (max-width: 860px) {
+  body {
+    padding: 0;
+  }
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .subtitulo {
+    text-align: center;
+    word-break: normal;
+    font-size: 3rem;
+  }
+
+  .introducao {
+    justify-items: start;
+    text-align: left;
+  }
+
+  .introducao::before {
+    display: none;
+  }
+}
+
+@media (max-width: 370px) {
+  .subtitulo {
+    font-size: 2.2rem;
+  }
 }
