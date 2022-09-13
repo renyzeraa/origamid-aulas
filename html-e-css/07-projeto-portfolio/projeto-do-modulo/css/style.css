@@ -47,9 +47,9 @@ img {
 }
 
 body {
-  background-color: var(--c1);
+  background-color: white;
   height: 100vh;
-  max-width: 128rem;
+  max-width: 112rem;
 
   margin: 0 auto;
   padding: 0 2.4rem;
@@ -57,7 +57,7 @@ body {
 
 /* header */
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,15 +66,116 @@ header {
   height: 6rem;
 }
 
-header nav ul {
+.header .header-menu {
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-header nav ul li a {
+.header .header-menu a {
   font-family: var(--ff-fira-sans);
   font-size: 1.8rem;
   color: var(--c13);
+  padding: 1rem 2rem;
+  display: block;
+}
+
+.header-menu a:hover {
+  transition: 0.5s;
+  font-weight: bold;
 }
 
 /*  home  */
+
+.content-wrapper {
+  padding: 21rem 0;
+}
+
+#home {
+  padding: 16rem 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 12rem;
+}
+
+#home img {
+  object-fit: cover;
+  object-position: center top;
+  height: 100%;
+}
+
+.home-content {
+  display: grid;
+  gap: 3rem;
+  position: relative;
+}
+.home-title {
+  font-family: var(--ff-fira-sans);
+  font-size: 72px;
+  line-height: 80px;
+  max-width: 14ch;
+  color: var(--c13);
+  word-break: break-word;
+}
+
+.home-title::before {
+  content: '';
+  position: absolute;
+  width: 12rem;
+  height: 2rem;
+  background-color: var(--green_200);
+  top: 17px;
+  left: -60px;
+  transform: rotate(130deg);
+  z-index: -1;
+}
+
+.home-title::after {
+  content: '';
+  position: absolute;
+  width: 12rem;
+  height: 2rem;
+  background-color: var(--green_100);
+  top: 17px;
+  left: -36px;
+  transform: rotate(130deg);
+  z-index: -2;
+}
+
+.home-content p {
+  font-family: var(--ff-fira-sans);
+  font-size: 2.4rem;
+  color: var(--c10);
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .header a {
+    background-color: var(--c1);
+    border-radius: 5px;
+    border-bottom: 3px solid transparent;
+  }
+
+  .header a:hover {
+    font-weight: 400;
+    transition: 0.8s;
+    border-color: #70da1c;
+  }
+
+  #home {
+    display: flex;
+    flex-direction: column;
+    margin-top: 14rem;
+    padding: 0 4rem;
+  }
+
+  #home img {
+    padding: 0 8rem;
+  }
+}
