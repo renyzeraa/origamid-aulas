@@ -21,6 +21,10 @@ img {
   display: block;
 }
 
+strong {
+  color: var(--c13);
+}
+
 :root {
   /* gray colors */
   --c1: #f5f5f5;
@@ -89,14 +93,14 @@ body {
 /*  home  */
 
 .content-wrapper {
-  padding: 21rem 0;
-}
-
-#home {
-  padding: 16rem 0;
+  padding: 10.5rem 0 0;
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
+}
+
+#home {
+  padding: 16rem 0 0;
   gap: 12rem;
 }
 
@@ -113,8 +117,8 @@ body {
 }
 .home-title {
   font-family: var(--ff-fira-sans);
-  font-size: 72px;
-  line-height: 80px;
+  font-size: 7.2rem;
+  line-height: 8rem;
   max-width: 14ch;
   color: var(--c13);
   word-break: break-word;
@@ -126,8 +130,8 @@ body {
   width: 12rem;
   height: 2rem;
   background-color: var(--green_200);
-  top: 17px;
-  left: -60px;
+  top: 1.7rem;
+  left: -6rem;
   transform: rotate(130deg);
   z-index: -1;
 }
@@ -138,8 +142,8 @@ body {
   width: 12rem;
   height: 2rem;
   background-color: var(--green_100);
-  top: 17px;
-  left: -36px;
+  top: 1.7rem;
+  left: -3.6rem;
   transform: rotate(130deg);
   z-index: -2;
 }
@@ -147,6 +151,33 @@ body {
 .home-content p {
   font-family: var(--ff-fira-sans);
   font-size: 2.4rem;
+  color: var(--c10);
+}
+
+/*  experiencia  */
+
+#experiencia {
+  gap: 12rem;
+}
+
+.section-title {
+  font-family: var(--ff-fira-sans);
+  font-size: 14.4rem;
+  line-height: 14.4rem;
+  text-transform: uppercase;
+  color: var(--c3);
+}
+
+.experiencia-content {
+  display: grid;
+  gap: 2rem;
+}
+
+.experiencia-content p {
+  font-family: var(--ff-fira-sans);
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+
   color: var(--c10);
 }
 
@@ -173,6 +204,10 @@ body {
     flex-direction: column;
     margin-top: 14rem;
     padding: 0 4rem;
+  }
+
+  .home-title {
+    font-size: 5rem;
   }
 
   #home img {
