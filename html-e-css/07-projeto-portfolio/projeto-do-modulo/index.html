@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
 
+  <meta name="description" content="Desenvolvedor Front End & UX/UI Designer localizado no Rio de Janeiro">
+
   <title>portfolio lobo</title>
 </head>
 
@@ -20,14 +22,14 @@
     <nav>
       <ul class="header-menu">
         <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#">Formação</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="content-wrapper" id="home">
+    <section class="content-wrapper" id="home" aria-label="Introdução">
 
       <img src="./assets/perfil.jpg" alt="foto lobo perfil">
 
@@ -40,9 +42,9 @@
 
     </section>
 
-    <section class="content-wrapper" id="experiencia">
+    <section class="content-wrapper" id="experiencia" aria-label="Experiência">
       <h1 class="section-title">
-        Expe<br>riên<br>cia
+        Experiência
       </h1>
       <div class="experiencia-content">
         <p>Desenvolvo pequenos projetos como o Bikcraft utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Para aplicativos web como a rede social Dogs eu trabalhei no <strong>UX</strong> e <strong>UI</strong> Design do projeto.</p>
@@ -63,7 +65,7 @@
         <div class="empresa">
           <span class="empresa-ano">2017</span>
           <h3 class="empresa-titulo"> Surfbot </h3>
-          <span class="empresa-titulo">Desenvolvedor Júnior</span>
+          <span class="empresa-titulo">Estagiário</span>
           <p class="empresa-texto">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas HTML, CSS e JavaScript. Para aplicativos web como a rede social Dogs.</p>
           <ul class="empresa-habilidade">
             <li>HTML</li>
@@ -74,7 +76,7 @@
         <div class="empresa">
           <span class="empresa-ano">2019</span>
           <h3 class="empresa-titulo"> Brafé </h3>
-          <span class="empresa-titulo">Desenvolvedor Júnior</span>
+          <span class="empresa-titulo">Voluntário</span>
           <p class="empresa-texto">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas HTML, CSS e JavaScript. Para aplicativos web como a rede social Dogs.</p>
           <ul class="empresa-habilidade">
             <li>Email Marketing</li>
@@ -83,9 +85,67 @@
           </ul>
         </div>
       </div>
-
     </section>
 
+    <section id="formacao" aria-label="Formação">
+      <div class="content-wrapper">
+        <h1 class="section-title">
+          Formação
+        </h1>
+        <div class="formacao-content">
+          <p>Minha mais recente experiência acadêmica foi o <strong>mestrado 🎓</strong> que fiz no exterior em <strong>UX Design</strong>. Além disso me mantenho sempre atualizado com cursos intensivos online.</p>
+
+          <div class="formacao-card">
+            <span class="formacao-tipo">bacharel</span>
+            <h3 class="formacao-curso">Administração
+              de Empresas</h3>
+            <span class="formacao-escola">UFRRJ</span>
+          </div>
+
+          <div class="formacao-card">
+            <span class="formacao-tipo">tecnólogo</span>
+            <h3 class="formacao-curso">Design
+              Digital</h3>
+            <span class="formacao-escola">Infnet</span>
+          </div>
+
+          <div class="formacao-card">
+            <span class="formacao-tipo">mestre</span>
+            <h3 class="formacao-curso">User Experience
+              Design</h3>
+            <span class="formacao-escola">UCLL</span>
+          </div>
+          <div class="cursos-content">
+            <div class="cursos">
+              <img class="cursos-icon" src="./assets/cursos.svg" alt="">
+              <span class="cursos-title">cursos intensivos</span>
+              <p class="cursos-tipo">UX Design & UI Design <span class="cursos-duracao">56h</span></p>
+
+              <p class="cursos-tipo">Front End para Iniciantes <span class="cursos-duracao">72h</span></p>
+
+            </div>
+            <div class="cursos">
+              <img class="cursos-icon" src="./assets/idiomas.svg" alt="">
+              <span class="cursos-title">idiomas</span>
+              <p class="idioma-tipo">Inglês <span class="idioma-nivel">/ Fluente</span></p>
+              <p class="idioma-tipo">Espanhol <span class="idioma-nivel">/ Intermediário</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contato">
+      <div class="content-wrapper">
+        <p class="footer-text">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa 👋</p>
+        <ul class="footer-contato">
+          <li>lobo@gmail.com</li>
+          <li>+55 21 9999-9999</li>
+
+        </ul>
+        <p class="direitos">Lobo. Alguns direitos reservados.</p>
+      </div>
+    </footer>
   </main>
 
 </body>

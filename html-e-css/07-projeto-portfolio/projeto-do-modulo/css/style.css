@@ -25,6 +25,10 @@ strong {
   color: var(--c13);
 }
 
+p {
+  font-family: var(--ff-fira-sans);
+}
+
 :root {
   /* gray colors */
   --c1: #f5f5f5;
@@ -52,11 +56,19 @@ strong {
 
 body {
   background-color: white;
-  height: 100vh;
-  max-width: 112rem;
+}
 
-  margin: 0 auto;
-  padding: 0 2.4rem;
+main {
+  height: 100vh;
+  font-family: var(--ff-fira-sans);
+}
+
+.section-title {
+  font-size: 14.4rem;
+  line-height: 14.4rem;
+  text-transform: uppercase;
+  word-break: break-all;
+  width: 4ch;
 }
 
 /* header */
@@ -66,7 +78,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 4rem 0;
-  width: 100%;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+  max-width: 112rem;
   height: 6rem;
 }
 
@@ -94,6 +108,10 @@ body {
 
 .content-wrapper {
   padding: 10.5rem 0 0;
+  max-width: 112rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
@@ -157,14 +175,12 @@ body {
 /*  experiencia  */
 
 #experiencia {
+  padding: 18rem 0;
   gap: 12rem;
+  align-items: flex-start;
 }
 
-.section-title {
-  font-family: var(--ff-fira-sans);
-  font-size: 14.4rem;
-  line-height: 14.4rem;
-  text-transform: uppercase;
+#experiencia .section-title {
   color: var(--c3);
 }
 
@@ -174,11 +190,253 @@ body {
 }
 
 .experiencia-content p {
-  font-family: var(--ff-fira-sans);
   font-size: 2.4rem;
   line-height: 3.2rem;
+  color: var(--c10);
+}
+
+.empresa {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--c1);
+  border-radius: 5px;
+  padding: 2rem;
+  gap: 0 4rem;
+}
+
+.empresa::before {
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 20px;
+  top: 20px;
+  left: -4px;
+  background: linear-gradient(180deg, #b6f829 0%, #67dd0a 100%);
+}
+
+.empresa .empresa-ano {
+  position: absolute;
+  top: 20px;
+  left: -50px;
+
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: var(--c10);
+}
+
+.empresa .empresa-titulo {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  color: var(--c13);
+  margin-bottom: 1rem;
+}
+
+.empresa .empresa-texto {
+  font-size: 1.4rem;
+  line-height: 2rem;
 
   color: var(--c10);
+}
+
+.empresa .empresa-habilidade {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 8px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.empresa-habilidade li {
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+/* formacao */
+
+#formacao {
+  padding: 12rem 2.4rem;
+  background-color: var(--c12);
+  position: relative;
+}
+
+#formacao .content-wrapper {
+  padding: 0;
+  position: relative;
+}
+
+#formacao .content-wrapper::before {
+  content: url('../assets/detalhe.svg');
+  position: absolute;
+  bottom: -180px;
+  left: 0px;
+  z-index: 2;
+}
+
+.formacao-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.formacao-content p {
+  grid-column: 1/-1;
+  font-size: 24px;
+  line-height: 32px;
+
+  color: #a3a3a3;
+}
+
+.formacao-content strong {
+  color: white;
+}
+
+.formacao-card {
+  margin-top: 6rem;
+  display: grid;
+  background-color: black;
+  padding: 2rem;
+  width: 20rem;
+  border-radius: 5px;
+  position: relative;
+}
+
+.formacao-card::before {
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(180deg, #b6f829 0%, #67dd0a 100%);
+  top: 20px;
+  left: -4px;
+  z-index: 2;
+}
+
+.formacao-tipo {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  color: var(--c6);
+}
+
+.formacao-curso {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #ffffff;
+
+  margin: 1.5rem 0 4rem;
+}
+
+.formacao-escola {
+  font-size: 18px;
+  line-height: 20px;
+
+  color: var(--c6);
+}
+
+.cursos-content {
+  grid-column: 1/-1;
+}
+
+.cursos {
+  width: 100%;
+  margin-top: 58px;
+  position: relative;
+}
+
+.cursos .cursos-icon {
+  position: absolute;
+  top: 0px;
+  left: -40px;
+}
+.cursos .cursos-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--c6);
+  display: inline-block;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.cursos .cursos-tipo {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.cursos .cursos-nivel {
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--c7);
+}
+
+.cursos .cursos-duracao {
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--c7);
+}
+
+.cursos .idioma-tipo {
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.cursos .idioma-nivel {
+  color: #8f8f8f;
+}
+
+/* footer */
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+footer .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 105px 24px;
+  position: relative;
+}
+
+.footer-text {
+  font-size: 24px;
+  line-height: 32px;
+  color: #cccccc;
+  width: 40ch;
+}
+
+.footer-contato {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  display: grid;
+  gap: 20px;
+  color: #ffffff;
+}
+
+.direitos {
+  position: absolute;
+  bottom: 10px;
+  left: 24px;
+  font-size: 18px;
+  line-height: 32px;
+
+  color: #8f8f8f;
 }
 
 @media (max-width: 800px) {
@@ -212,5 +470,76 @@ body {
 
   #home img {
     padding: 0 8rem;
+  }
+
+  #experiencia {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  #experiencia .section-title {
+    font-size: 4rem;
+    line-height: 5rem;
+    color: var(--c12);
+    text-transform: capitalize;
+    width: 100%;
+  }
+
+  .empresa {
+    grid-template-columns: 1fr;
+  }
+
+  .empresa .empresa-habilidade {
+    margin: 10px 0;
+  }
+
+  .empresa .experiencia-content p {
+    font-size: 1.6rem;
+  }
+
+  .empresa .empresa-ano {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+
+  .empresa-ano::before {
+    content: 'Ano: ';
+  }
+
+  .formacao-content {
+    grid-template-columns: repeat(auto-fit, 220px);
+  }
+
+  footer .content-wrapper {
+    flex-direction: column;
+  }
+
+  .footer-text,
+  .footer-contato {
+    width: fit-content;
+    word-break: break-all;
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 1000px) {
+  #formacao .content-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  #formacao .section-title {
+    font-size: 4rem;
+    line-height: 5rem;
+    text-transform: capitalize;
+    width: 100%;
+  }
+
+  #formacao {
+    padding: 14rem 48px;
+  }
+
+  .formacao-content p {
+    font-size: 1.8rem;
   }
 }
