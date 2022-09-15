@@ -2,15 +2,15 @@ p [required] {
   border: 2px solid tomato;
 }
 
-a[href="#contato"] {
+a[href='#contato'] {
   border: 2px solid greenyellow;
 }
 
-[href^="#"] {
+[href^='#'] {
   background: tomato;
 }
 
-[href$=".com"] {
+[href$='.com'] {
   background: forestgreen;
 }
 
@@ -35,6 +35,6 @@ body {
   color: blue;
 }
 
-* {
+/* * {
   border: 2px solid red;
-}
+} */

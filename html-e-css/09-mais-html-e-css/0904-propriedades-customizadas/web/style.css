@@ -3,7 +3,6 @@
   --texto-1: #111;
   --texto-2: #444;
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
     --fundo: #222;
