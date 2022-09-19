@@ -1,0 +1,114 @@
+:root {
+  /* 1rem = 16px */
+  font-size: 62.5%;
+
+  /* white to black */
+
+  --w: #ffffff;
+  --c1: #f7f7f7;
+  --c2: #ededed;
+  --c3: #dedede;
+  --c4: #cccccc;
+  --c5: #b2b2b2;
+  --c6: #9c9c9c;
+  --c7: #717171;
+  --c8: #595959;
+  --c9: #404040;
+  --c10: #2e2e2e;
+  --c11: #111111;
+  --c12: #000000;
+
+  /* yellow */
+
+  --p5: #332200;
+  --p4: #664400;
+  --p3: #a66f00;
+  --p2: #e4a30b;
+  --p1: #ffbb00;
+
+  --ff-poppins: 'Poppins', sans-serif;
+  --ff-roboto: 'Roboto', sans-serif;
+  --ff-meri: 'Merriweather', serif;
+}
+
+.w {
+  color: var(--w);
+}
+.c1 {
+  color: var(--c1);
+}
+.c2 {
+  color: var(--c2);
+}
+.c3 {
+  color: var(--c3);
+}
+.c4 {
+  color: var(--c4);
+}
+.c5 {
+  color: var(--c5);
+}
+.c6 {
+  color: var(--c6);
+}
+.c7 {
+  color: var(--c7);
+}
+.c8 {
+  color: var(--c8);
+}
+.c9 {
+  color: var(--c9);
+}
+.c10 {
+  color: var(--c10);
+}
+.c11 {
+  color: var(--c11);
+}
+.c12 {
+  color: var(--c12);
+}
+
+.c-p5 {
+  color: var(--p5);
+}
+.c-p4 {
+  color: var(--p4);
+}
+.c-p3 {
+  color: var(--p3);
+}
+.c-p2 {
+  color: var(--p2);
+}
+.c-p1 {
+  color: var(--p1);
+}
+.ff-poppins {
+  font-family: var(--ff-poppins);
+}
+.ff-roboto {
+  font-family: var(--ff-roboto);
+}
+
+.ff-meri {
+  font-family: var(--ff-meri);
+}
+
+.bg-c10 {
+  background-color: var(--c10) !important;
+}
+
+.bg-c11 {
+  background-color: var(--c11) !important;
+}
+
+.bg-c12 {
+  background-color: var(--c12) !important;
+}
+
+.bg-p1 {
+  background-color: var(--p1);
+}
