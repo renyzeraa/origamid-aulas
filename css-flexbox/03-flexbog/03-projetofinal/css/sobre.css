@@ -1,0 +1,33 @@
+.text {
+  font-size: 17px;
+  color: #707070;
+}
+
+.container-sobre {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  gap: 40px;
+}
+
+.sobre-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 340px;
+}
+.sobre-imagens {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 460px;
+}
+
+@media (max-width: 768px) {
+  .title-section {
+    width: auto;
+  }
+  .container-sobre {
+    grid-template-columns: 1fr;
+  }
+}
