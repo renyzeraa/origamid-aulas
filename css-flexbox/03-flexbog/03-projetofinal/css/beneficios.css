@@ -1,0 +1,40 @@
+.beneficios {
+  padding: 60px 24px !important;
+}
+
+.beneficios-lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.beneficios-lista li {
+  max-width: 300px;
+}
+
+.beneficios-lista li h2 {
+  color: #b6b6b6;
+  font-size: 28px;
+  position: relative;
+  padding-left: 12px;
+}
+
+.beneficios-lista li h2::before {
+  content: '';
+  position: absolute;
+  height: 26px;
+  width: 5px;
+  left: 0px;
+  top: 5px;
+  border-radius: 1px;
+}
+
+.purple::before {
+  background: rgb(129, 43, 179);
+}
+.pink::before {
+  background: rgb(243, 109, 131);
+}
+.blue::before {
+  background: rgb(132, 132, 250);
+}
