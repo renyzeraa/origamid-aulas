@@ -1,0 +1,11 @@
+.dados-empresa {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
