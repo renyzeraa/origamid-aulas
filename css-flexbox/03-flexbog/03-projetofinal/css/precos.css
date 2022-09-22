@@ -1,0 +1,72 @@
+.precos-bg {
+  background-color: #e4e4e4;
+}
+
+.content2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.card-preco {
+  border: 4px solid #fff;
+  padding: 25px 40px 40px;
+  width: 320px;
+  height: min-content;
+}
+
+.card-preco h2 {
+  color: #b6b6b6;
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 18px;
+  border-bottom: 4px solid #fff;
+  margin-bottom: 18px;
+}
+
+.card-preco h3 {
+  font-size: 42px;
+  text-align: center;
+  border-bottom: 4px solid #fff;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+}
+
+.card-preco h3 sup {
+  font-size: 18px;
+}
+
+.card-preco ul {
+  padding-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-preco ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-preco ul li span {
+  font-size: 40px;
+  line-height: 0px;
+  color: rgb(53, 107, 255);
+}
+
+.btn-buy {
+  margin-top: 32px;
+  border: 4px solid black;
+  padding: 12px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
