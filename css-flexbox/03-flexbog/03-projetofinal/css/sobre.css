@@ -6,14 +6,14 @@
 .container-sobre {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, auto));
-  gap: 40px;
+  gap: 20px;
 }
 
 .sobre-texto {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 340px;
+  max-width: 400px;
 }
 .sobre-imagens {
   display: flex;
