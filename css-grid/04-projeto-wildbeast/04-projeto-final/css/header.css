@@ -1,0 +1,32 @@
+.header {
+  grid-area: header;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  padding: 30px 24px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.header img {
+  width: 200px;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.header-menu li a {
+  display: block;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.header-menu li a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
