@@ -1,0 +1,87 @@
+@media (max-width: 1200px) {
+  .estrutura {
+    grid-template-areas:
+      'header header header'
+      'sidenav content content'
+      ' sidenav anuncios anuncios'
+      'footer footer footer';
+  }
+  .anuncios {
+    display: flex;
+  }
+}
+@keyframes seta {
+  from {
+    right: 30px;
+  }
+  to {
+    right: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+  }
+  .estrutura {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'header '
+      'sidenav '
+      ' content '
+      'anuncios '
+      'footer ';
+  }
+
+  .sidenav {
+    position: relative;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+
+  .sidenav::after {
+    content: '→';
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    color: rgba(0, 0, 0, 0.3);
+    animation: seta 0.5s ease-in 0s infinite alternate;
+  }
+
+  .sidenav ul {
+    display: flex;
+  }
+
+  .sidenav img {
+    width: 100px;
+  }
+
+  .sidenav li {
+    flex: 1 0 120px;
+  }
+
+  .sidenav li a {
+    margin: 20px 20px 20px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+  .caracteristicas {
+    justify-content: center;
+  }
+
+  .content .sobre {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .atributos {
+    text-align: center;
+  }
+}

@@ -6,7 +6,6 @@
 
 .sidenav li a {
   display: block;
-  min-width: 60px;
   max-width: 100px;
   margin: 0 auto 30px auto;
   background: white;

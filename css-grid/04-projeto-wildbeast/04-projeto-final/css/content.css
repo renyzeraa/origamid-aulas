@@ -1,0 +1,127 @@
+.content {
+  grid-area: content;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.titulo {
+  color: #b07dfb;
+}
+
+.titulo h1 {
+  font-size: 3.75em;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.titulo span {
+  font-style: italic;
+  font-size: 0.875em;
+}
+
+.caracteristicas {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.caracteristicas span {
+  display: block;
+}
+
+.carac {
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  width: 80px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.35);
+  position: relative;
+}
+
+.numero {
+  color: #b07dfb;
+  font-size: 3em;
+  line-height: 1;
+  margin: 10px auto;
+}
+
+.rotulo {
+  background-color: white;
+  border-radius: 0px 0px 5px 5px;
+  color: #b07dfb;
+  position: relative;
+  top: 2px;
+}
+
+.content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  letter-spacing: -0.005em;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.content .sobre {
+  color: #b07dfb;
+  font-size: 0.875em;
+  max-width: 16em;
+}
+
+.informacoes p + p {
+  margin-top: 30px;
+}
+
+.content img {
+  border-radius: 5px;
+}
+
+.lobo1 {
+  grid-row: span 2;
+}
+
+.lobo1,
+.lobo2 {
+  height: 100%;
+  width: 100%;
+}
+
+.atributos,
+.citacao {
+  padding: 30px;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.35);
+}
+
+.citacao p {
+  font-size: 1.5em;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.atributos {
+  align-self: flex-start;
+}
+
+.atributos li {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  font-size: 1.125em;
+  padding: 15px;
+}
+
+.atributos li + li {
+  border-top: 2px solid #b07dfb;
+}
+
+.col-span {
+  grid-column: 1/-1;
+  width: 100%;
+}
