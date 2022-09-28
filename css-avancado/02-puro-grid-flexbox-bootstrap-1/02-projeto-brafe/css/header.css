@@ -1,0 +1,54 @@
+.header-bg {
+  background-color: #252525;
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 0 24px;
+  height: 80px;
+}
+
+.header-nav {
+  display: flex;
+  gap: 10px;
+}
+
+.header-nav li a {
+  color: white;
+  font-size: 1.125rem;
+  padding: 10px;
+  position: relative;
+}
+
+.header-nav li a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 8px;
+}
+.header-nav li a:hover:after {
+  transition: all 0.2s ease-in-out;
+  width: 80%;
+}
+
+@media (max-width: 620px) {
+  .header {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 20px 25px;
+    height: auto;
+  }
+  .header-nav {
+    padding-top: 20px;
+  }
+}

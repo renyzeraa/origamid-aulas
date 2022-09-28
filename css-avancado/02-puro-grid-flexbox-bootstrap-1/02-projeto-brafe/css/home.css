@@ -1,0 +1,46 @@
+.home-bg {
+  background-image: url('../img/bg-intro.jpg');
+  height: 460px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: grid;
+  align-items: center;
+}
+
+.home {
+  color: white;
+}
+
+.home h1 {
+  width: 16ch;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.home h1::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background-color: white;
+  left: 47%;
+  bottom: -8px;
+}
+
+.home p {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+@media (max-width: 500px) {
+  .home-bg {
+    height: 250px;
+  }
+
+  .home h1 {
+    width: auto;
+    padding: 0 24px;
+  }
+}
