@@ -1,0 +1,63 @@
+.contato-bg {
+  background-color: rgba(231, 228, 216, 1);
+}
+
+.newsletter {
+  color: #252525;
+}
+
+.newsletter h2 {
+  font-size: 2.25rem;
+}
+
+.newsletter span {
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.form {
+  border: 2px solid #252525;
+  display: flex;
+}
+
+.form input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.25rem;
+  color: #252525;
+  font-style: italic;
+  padding: 8px 12px;
+}
+
+.form button {
+  background-color: #252525;
+  border: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: rgba(231, 228, 216, 1);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 8px 18px;
+  cursor: pointer;
+}
+
+.footer,
+.contato {
+  padding: 40px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer p {
+  color: #252525;
+  max-width: 480px;
+  font-size: 1.125rem;
+}
+
+.footer-bg {
+  background-color: rgba(214, 211, 200, 1);
+}
