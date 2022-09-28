@@ -10,6 +10,7 @@ html {
 
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #fdfcf9;
 }
 
 ul {
@@ -23,13 +24,4 @@ a {
 img {
   max-width: 100%;
   display: block;
-}
-
-.content {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.col-span {
-  grid-column: 1/-1;
 }
