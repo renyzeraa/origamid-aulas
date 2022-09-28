@@ -6,9 +6,10 @@
   gap: 20px;
 }
 
-.intro h1 {
+.intro h2 {
   color: #252525;
   padding-bottom: 40px;
+  font-size: 2rem;
 }
 
 .intro p {
