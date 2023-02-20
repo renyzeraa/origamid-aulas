@@ -1,0 +1,14 @@
+/* line 3, ../../Documents/GitHub/origamid-aulas/css-sass/1-css-com-sass/1-4-como-instalar-o-sass_arquivos/sass/scss/style.scss */
+div {
+  background: #999;
+  height: 200px;
+  width: 300px;
+}
+
+/* line 7, ../../Documents/GitHub/origamid-aulas/css-sass/1-css-com-sass/1-4-como-instalar-o-sass_arquivos/sass/scss/style.scss */
+div a {
+  color: pink;
+  background: blue;
+}
+
+/*# sourceMappingURL=style.css.map */
