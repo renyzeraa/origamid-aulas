@@ -1,0 +1,28 @@
+$cor: #84e;
+$font-primaria: monospace;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  color: $cor;
+  font-family: $font-primaria;
+  margin-bottom: 20px;
+}
+p {
+  font-size: 1.2em;
+  font-family: $font-primaria;
+  margin-bottom: 20px;
+}
+
+button {
+  border: none;
+  background-color: gray;
+  cursor: pointer;
+  padding: 20px;
+  color: $cor;
+  font-family: $font-primaria;
+  border-radius: 5px;
+}

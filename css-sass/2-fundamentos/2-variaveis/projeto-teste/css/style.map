@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../sass/style.scss"
+	],
+	"sourcesContent": [
+		"h1 {\r\n  color: #84e;\r\n  font-family: monospace;\r\n}\r\np {\r\n  font-size: 1.2em;\r\n  font-family: monospace;\r\n}\r\n\r\nbutton {\r\n  border: none;\r\n  background-color: grays;\r\n  cursor: pointer;\r\n  padding: 20px;\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,EAAE,CAAC;EACD,KAAK,EAAE,IAAI;EACX,WAAW,EAAE,SAAS;CACvB;;;AACD,AAAA,CAAC,CAAC;EACA,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,SAAS;CACvB;;;AAED,AAAA,MAAM,CAAC;EACL,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,KAAK;EACvB,MAAM,EAAE,OAAO;EACf,OAAO,EAAE,IAAI;CACd"
+}
