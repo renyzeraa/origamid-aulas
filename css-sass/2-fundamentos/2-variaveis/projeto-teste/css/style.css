@@ -1,1 +1,7 @@
-*{margin:0;padding:0;box-sizing:border-box}h1{color:#84e;font-family:monospace;margin-bottom:20px}p{font-size:1.2em;font-family:monospace;margin-bottom:20px}button{border:none;background-color:gray;cursor:pointer;padding:20px;color:#84e;font-family:monospace;border-radius:5px}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+h1 { color: #84e; font-family: monospace; margin-bottom: 20px; }
+
+p { font-size: 1.2em; font-family: monospace; margin-bottom: 20px; }
+
+button { border: none; background-color: gray; cursor: pointer; padding: 20px; color: #84e; font-family: monospace; border-radius: 5px; }
