@@ -1,0 +1,42 @@
+/* cores */
+$cor-primaria: #fec63e;
+
+$cor-preto-puro: #111;
+$cor-branco-puro: #fff;
+
+/* tipografia */
+$font-primary: Arial, Helvetica, sans-serif;
+@mixin type-1($tamanho) {
+  @if $tamanho == 14px {
+    font-size: 14px;
+    line-height: 20px;
+  } @else if $tamanho == 18px {
+    font-size: 18px;
+    line-height: 25px;
+  } @else if $tamanho == 24px {
+    font-size: 24px;
+    line-height: 30px;
+  } @else if $tamanho == 36px {
+    font-size: 36px;
+  } @else if $tamanho == 48px {
+    font-size: 48px;
+  }
+}
+
+@mixin type-2($tamanho) {
+  font-family: Georgia, 'Times New Roman', serif;
+  @if $tamanho == 14px {
+    font-size: 14px;
+    line-height: 20px;
+  } @else if $tamanho == 18px {
+    font-size: 18px;
+    line-height: 25px;
+  } @else if $tamanho == 24px {
+    font-size: 24px;
+    line-height: 30px;
+  } @else if $tamanho == 36px {
+    font-size: 36px;
+  } @else if $tamanho == 48px {
+    font-size: 48px;
+  }
+}
