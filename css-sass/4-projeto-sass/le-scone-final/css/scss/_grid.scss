@@ -1,0 +1,24 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: blue;
+    &::after,
+    &::before {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+.grid-3 {
+    width: calc(25% - 20px);
+    color: white;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
