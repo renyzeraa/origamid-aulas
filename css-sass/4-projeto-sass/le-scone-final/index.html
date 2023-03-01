@@ -5,16 +5,86 @@
 	<title>Le Scone</title>
 	<meta name="description" content="Le Scone - Restaurante">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=PT+Mono&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/css-sass/4-projeto-sass/le-scone-final/css/style.css">
 </head>
 
 <body>
-	<div class="container">
-		<div class="grid-3">Teste 1</div>
-		<div class="grid-3">Teste 2</div>
-		<div class="grid-3">Teste 3</div>
-		<div class="grid-3">Teste 4</div>
-	</div>
+	<main class="container intro">
+		<div class="grid-5">
+			<img class="logo" src="./img/lescone.png" alt="Le Scone">
+			<div class="intro-info">
+				<p>De Seg. à Sab. <span class="aberto"></span><br> das 09:00h às 21:00h</p>
+				<p>Praia de Botafogo, 300<br>Rio de Janeiro - RJ</p>
+			</div>
+			<p class="intro-telefone">+55 021 2121-3333</p>
+			<div class="grid-7">
+				<img src="./img/foto.png" alt="Cafeteria Le Scone">
+			</div>
+		</div>
+	</main>
+	<section class="container menu">
+		<h1 class="grid-4">Menu</h1>
+		<div class="grid-7 offset-1">
+			<div class="menu-item">
+				<img src="./img/prato-1.png" alt="Foto Prato 1">
+				<h2>Entradas</h2>
+				<ul>
+					<li><span>R$1,70</span>Ovos Mexidos</li>
+					<li><span>R$9,89</span>Scones de Frutas</li>
+					<li><span>R$2,20</span>Joelho de Queijo</li>
+					<li><span>R$7,49</span>Presunto Cozido</li>
+					<li><span>R$6,99</span>Cozinha de Frango</li>
+				</ul>
+				<img src="./img/prato-2.png" alt="Foto Prato 2">
+				<h2>Pratos Principais</h2>
+				<ul>
+					<li><span>R$6,70</span>Feijoada</li>
+					<li><span>R$10,89</span>Penne com Queijo</li>
+					<li><span>R$2,20</span>Macarrão no Alho</li>
+					<li><span>R$7,00</span>Medalhão de Frango</li>
+					<li><span>R$12,50</span>Peixo Cozido</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="container contato">
+		<h1 class="grid-4">Contato</h1>
+		<div class="grid-7 offset-1">
+			<form>
+				<label>Nome</label>
+				<input type="text">
+				<div class="grid-7">
+					<label>Email</label>
+					<input type="text">
+				</div>
+				<div class="grid-5">
+					<label>Telefone</label>
+					<input type="number">
+				</div>
+				<label>Mensagem</label>
+				<textarea></textarea>
+				<input type="button" class="button" value="Enviar">
+			</form>
+			<div class="contato-info">
+				<p>contato@lescone.com ////</p>
+				<p>+55 021 2121-3333 ////</p>
+			</div>
+			<a href="#" class="contato-mapa">
+				<img src="./img/map.png" alt="Mapa para chegar na Le Scone">
+			</a>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<p>Le scone ₢ 1989 - 2023. Alguns direitos reservados</p>
+			<a href="#" target="_blank">
+				<img src="./img/lescone-icone.png" alt="Le Scone Icone">
+			</a>
+		</div>
+	</footer>
 </body>
 
 </html>
