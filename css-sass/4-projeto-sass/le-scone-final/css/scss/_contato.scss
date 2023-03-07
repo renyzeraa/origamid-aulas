@@ -70,5 +70,9 @@ input.button {
 
 .contato-mapa {
     display: block;
-    @include box-shadow(0 0 0 10px $be);
+    @include box-shadow(0 0 0 10px $bg-principal-medio);
+    clear: both;
+    img {
+        width: 100%;
+    }
 }
