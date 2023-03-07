@@ -2,9 +2,13 @@
 
 ## Curso Origamid - Front-end
 
-- Css Flex-box
-- Html + Css
-- JavaScript ES6+
+-   Css Flex-box
+-   Css Avançado
+-   Css Grid
+-   Css Sass/Scss
+-   Html + Css
+-   JavaScript ES6+
+-   jQuery + JavaScript
 
 ## Contact
 
