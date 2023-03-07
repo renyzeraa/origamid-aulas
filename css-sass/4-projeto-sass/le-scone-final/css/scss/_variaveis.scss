@@ -2,12 +2,14 @@
 $bg-principal-claro: #edece4;
 $bg-principal-medio: #cbc6b9;
 $bg-principal-escuro: #988c77;
-$cor-principal: #edece4;
-$green: #988c77;
+$cor-principal: #2a2426;
+$green: #1ab912;
 
 // Fontes
 $fonte-1: 'PT Mono', monospace;
 $fonte-2: 'Aref Ruqaa', serif;
+
+$border-cor-principal: 2px solid $cor-principal;
 
 @function em($pixel, $contexto: 16) {
     @return $pixel / $contexto + em;
@@ -30,4 +32,10 @@ $fonte-2: 'Aref Ruqaa', serif;
         font-size: em(24);
         line-height: em(30, 24);
     }
+}
+
+@mixin box-shadow($shadow...) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
 }
