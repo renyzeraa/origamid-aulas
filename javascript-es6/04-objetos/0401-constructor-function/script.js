@@ -7,13 +7,15 @@ const pessoa = {
   }
 }
 
-function Pessoa(nome, idade) {
-  this.nome = nome;
-  this.idade = idade;
-  this.andar = function() {
-    console.log(nome + ' Andou');
+function Pessoa(sNome, iIdade) {
+  this.nome = sNome;
+  this.idade = iIdade;
+  this.andar = () => {
+    console.log(this.nome + ' andou');
   }
+  return this;
 }
+
 
 // Crie 3 pessoas, João - 20 anos,
 // Maria - 25 anos, Bruno - 15 anos
@@ -29,24 +31,18 @@ const bruno = new Pessoa('Bruno', 15);
 // elements, retorna NodeList com os elementos selecionados
 // addClass(classe), adiciona a classe a todos os elementos
 // removeClass(classe), remove a classe a todos os elementos
-
 function Dom(seletor) {
-  const elementList = document.querySelectorAll(seletor);
-  this.elements = elementList;
-  this.addClass = function(classe) {
-    elementList.forEach((element) => {
-      element.classList.add(classe);
-    })
+  this.seletor = seletor;
+  const aElementsList = document.querySelectorAll(seletor);
+  this.elements = aElementsList
+  this.addClass = (sClasse) => {
+    this.elements.forEach(element => {
+      element.classList.add(sClasse);
+    });
   }
-  this.removeClass = function(classe) {
-    elementList.forEach((element) => {
-      element.classList.remove(classe);
-    })
+  this.removeClass = (sClasse) => {
+    this.elements.forEach(element => {
+      element.classList.remove(sClasse);
+    });
   }
 }
-
-const listaItens = new Dom('li');
-const ul = new Dom('ul');
-
-// listaItens.addClass('ativar');
-// ul.addClass('ativar-ul')
