@@ -7,13 +7,14 @@ function Pessoa(nome, sobrenome, idade) {
   this.nome = nome;
   this.sobrenome = sobrenome;
   this.idade = idade;
-} 
-
-Pessoa.prototype.nomeCompleto = function() {
-  return `${this.nome} ${this.sobrenome}`
+  return this;
 }
 
-const andre = new Pessoa('André', 'Rafael', 28);
+Pessoa.prototype.nomeCompleto = function () {
+  return `${this.nome} ${this.sobrenome}`;
+}
+
+const renan = new Pessoa('renan', 'silva', 25);
 
 // Liste os métodos acessados por 
 // dados criados com NodeList,
@@ -21,7 +22,6 @@ const andre = new Pessoa('André', 'Rafael', 28);
 Object.getOwnPropertyNames(NodeList.prototype)
 Object.getOwnPropertyNames(HTMLCollection.prototype)
 Object.getOwnPropertyNames(Document.prototype)
-
 
 // Liste os construtores dos dados abaixo
 const li = document.querySelector('li');

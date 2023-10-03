@@ -7,8 +7,8 @@ function Pessoa(nome, idade) {
 }
 
 var obj = {
-  nome: 'Nadre',
-  idade: 33,
+  nome: 'Andre',
+  idade: 25,
 }
 
 Pessoa.prototype.andar = function() {
