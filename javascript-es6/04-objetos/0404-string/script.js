@@ -1,7 +1,6 @@
-// Utilizando o foreach na array abaixo,
-// some os valores de Taxa e os valores de Recebimento
+console.log('1 - Utilizando o foreach na array abaixo \nsome os valores de Taxa e os valores de Recebimento');
 
-const transacoes = [
+const aTransacoes = [
   {
     descricao: 'Taxa do Pão',
     valor: 'R$ 39',
@@ -26,34 +25,39 @@ const transacoes = [
 
 let taxaTotal = 0;
 let recebimentoTotal = 0;
-transacoes.forEach((item) => {
-  const numeroLimpo = +item.valor.replace('R$ ', '');
-  if (item.descricao.slice(0, 4) === 'Taxa') {
-    taxaTotal += numeroLimpo;
-  } else if(item.descricao.slice(0, 4) === 'Rece') {
-    recebimentoTotal += numeroLimpo;
+aTransacoes.forEach((item) => {
+  if(item.descricao.includes('Taxa') && !item.descricao.includes('Recebimento')) {
+    taxaTotal += parseInt(item.valor.slice(3))
+  }
+  if (!item.descricao.includes('Taxa') && item.descricao.includes('Recebimento')) {
+    recebimentoTotal += parseInt(item.valor.slice(3))
   }
 })
+ 
 console.log(taxaTotal)
 console.log(recebimentoTotal)
+console.log('-------------------')
 
-
-// Retorne uma array com a lista abaixo
+console.log('2 - Retorne uma array com a lista abaixo')
 const transportes = 'Carro;Avião;Trem;Ônibus;Bicicleta';
 
 const arrayTransportes = transportes.split(';');
 console.log(arrayTransportes);
+console.log('-------------------');
 
-// Substitua todos os span's por a's
-let html = `<ul>
-                <li><span>Sobre</span></li>
-                <li><span>Produtos</span></li>
-                <li><span>Contato</span></li>
-              </ul>`;
+console.log('3 - Substitua todos os span\'s por a\'s');
+
+let html = 
+`<ul>
+  <li><span>Sobre</span></li>
+  <li><span>Produtos</span></li>
+  <li><span>Contato</span></li>
+</ul>`;
 
 html = html.split('span').join('a');
 
 console.log(html);
+console.log('-------------------');
 
 // Retorne o último caracter da frase
 const frase = 'Melhor do ano!';
