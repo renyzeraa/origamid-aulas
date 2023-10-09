@@ -72,11 +72,11 @@
 
 // console.log(reduceAulas);
 
-// const numeros = [10, 25, 30, 3, 54, 33, 22];
+const numeros = [10, 25, 30, 3, 54, 33, 22];
 
-// const maiorNumero = numeros.reduce((anterior, atual) => anterior > atual ? anterior : atual, 0)
+const maiorNumero = numeros.reduce((anterior, atual) => anterior > atual ? anterior : atual, 0)
 
-// console.log(maiorNumero)
+console.log(maiorNumero)
 
 // const aulas = [
 //   {
@@ -104,66 +104,66 @@
 //   return acumulador;
 // }, {});
 
-const frutas = ['', 'Banana', 'Pêra', 'Uvas'];
+// const frutas = ['', 'Banana', 'Pêra', 'Uvas'];
 
 // const temUva = frutas.some((item) => {
 //   return item === 'Uva';
 // })
 
-const every = frutas.every((fruta) => {
-  console.log(fruta);
-  return fruta;
-})
+// const every = frutas.every((fruta) => {
+//   console.log(fruta);
+//   return fruta;
+// })
 
-const indexUva = frutas.findIndex(item => {
-  return item;
-})
+// const indexUva = frutas.findIndex(item => {
+//   return item;
+// })
 
-console.log('Index: ', indexUva)
+// console.log('Index: ', indexUva)
 
-console.log(every);
+// console.log(every);
 
-// console.log(temUva);
+// // console.log(temUva);
 
-const numeros = [6, 43, 22, 88, 101, 29];
+// const numeros = [6, 43, 22, 88, 101, 29];
 
-const maiorQue3 = numeros.every(function(n) {
-  return n >= 7;
-});
+// const maiorQue3 = numeros.every(function(n) {
+//   return n >= 7;
+// });
 
-console.log(maiorQue3)
+// console.log(maiorQue3)
 
-const frutas1 = ['Banana', undefined, null, '', 'Uva', 0, 'Maçã'];
+// const frutas1 = ['Banana', undefined, null, '', 'Uva', 0, 'Maçã'];
 
-const arrayFrutas = frutas1.filter((item) => {
-  console.log(item);
-  return item;
-})
+// const arrayFrutas = frutas1.filter((item) => {
+//   console.log(item);
+//   return item;
+// })
 
-console.log(arrayFrutas);
+// console.log(arrayFrutas);
 
 
-const aulas = [
-  {
-    nome: 'HTML 1',
-    min: 15
-  },
-  {
-    nome: 'HTML 2',
-    min: 10
-  },
-  {
-    nome: 'CSS 1',
-    min: 20
-  },
-  {
-    nome: 'JS 1',
-    min: 25
-  },
-]
+// const aulas = [
+//   {
+//     nome: 'HTML 1',
+//     min: 15
+//   },
+//   {
+//     nome: 'HTML 2',
+//     min: 10
+//   },
+//   {
+//     nome: 'CSS 1',
+//     min: 20
+//   },
+//   {
+//     nome: 'JS 1',
+//     min: 25
+//   },
+// ]
 
-const maiores15 = aulas.filter((aula) => {
-  return aula.min >= 15;
-})
+// const maiores15 = aulas.filter((aula) => {
+//   return aula.min >= 15;
+// })
 
-console.log(maiores15)
+// console.log(maiores15)
