@@ -4,30 +4,27 @@ const comidas = ['Pizza', 'Frango', 'Carne', 'Macarrão'];
 // Adicione 'Arroz' ao final da array
 // Adicione 'Peixe' e 'Batata' ao início da array
 
-
-const primeiroValor = comidas.shift();
-const ultimoValor = comidas.pop();
+const primaryValue = comidas.shift();
+const lastValue = comidas.pop();
+console.log(primaryValue, lastValue);
 
 comidas.push('Arroz');
 comidas.unshift('Peixe', 'Batata');
+console.log('Comidas =>', comidas);
 
-console.log(primeiroValor)
-console.log(ultimoValor)
-console.log(comidas)
-
+/* -------------------- */
 const estudantes = ['Marcio', 'Brenda', 'Joana', 'Kleber', 'Julia'];
 // Arrume os estudantes em ordem alfabética
 // Inverta a ordem dos estudantes
 // Verifique se Joana faz parte dos estudantes
 // Verifique se Juliana faz parte dos estudantes
-estudantes.sort();
-estudantes.reverse();
 
-console.log(estudantes);
-console.log(estudantes.includes('Joana'))
-console.log(estudantes.includes('Juliana'))
+estudantes.sort().reverse();
+console.log(estudantes.map(names => names.toLowerCase()).indexOf('joana') > 0);
+console.log(estudantes.map(names => names.toLowerCase()).indexOf('Juliana') > 0);
+console.log('Estudantes =>',estudantes);
 
-
+/* -------------------- */
 let html = `<section>
               <div>Sobre</div>
               <div>Produtos</div>
@@ -35,8 +32,10 @@ let html = `<section>
             </section>`
 // Substitua section por ul e div com li,
 // utilizando split e join
-html = html.split('section').join('ul').split('div').join('li');
-console.log(html)
+
+html = html.split('section').join('ul').split('div').join('li')
+console.log(html);
+
 
 const carros = ['Ford', 'Fiat', 'VW', 'Honda'];
 // Remova o último carro, mas antes de remover
