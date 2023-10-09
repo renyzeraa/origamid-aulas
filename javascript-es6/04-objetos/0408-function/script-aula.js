@@ -46,11 +46,7 @@
 
 // Dom.prototype.ativo.call(li, 'ativar');
 
-
 // const ul = new Dom('ul');
-
-
-
 
 // ul.ativo.call(li, 'ativo');
 // ul.ativo('ativar');
