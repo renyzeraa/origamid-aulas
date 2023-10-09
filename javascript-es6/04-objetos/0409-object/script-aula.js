@@ -41,26 +41,27 @@
 
 // Object.assign(moto, funcaoAutomovel);
 
-// // console.log(moto)
-
-// const moto = {
-//   capacete: true,
-// }
-
-
-// Object.defineProperties(moto, {
-//   rodas: {
-//     enumerable: true,
-//     get() {
-//       return 2;
-//     },
-//     set(valor) {
-//       this._rodas = valor * 4 + ' Total Rodas'
-//     }
-//   }
-// })
-
 // console.log(moto)
+
+const moto = {
+  capacete: true,
+  
+}
+
+
+Object.defineProperties(moto, {
+  rodas: {
+    enumerable: true,
+    get() {
+      return 2;
+    },
+    set(valor) {
+      this._rodas = valor * 4 + ' Total Rodas'
+    }
+  }
+})
+
+console.log(moto)
 
 // const innerHeightConfig = Object.getOwnPropertyDescriptor(window, 'innerHeight');
 
@@ -96,16 +97,16 @@
 // console.log(carro)
 // console.log(Object.isFrozen(carro))
 
-const frutas = ['Banana', 'Uva'];
-const frase = 'Oi frase';
-const somar = function(a, b) {
-  return a + b;
-};
+// const frutas = ['Banana', 'Uva'];
+// const frase = 'Oi frase';
+// const somar = function(a, b) {
+//   return a + b;
+// };
 
-const carro = {
-  marca: 'Ford'
-}
+// const carro = {
+//   marca: 'Ford'
+// }
 
-console.log(frutas.toString());
+// console.log(frutas.toString());
 
-console.log(Object.prototype.toString.call(somar));
+// console.log(Object.prototype.toString.call(somar));
