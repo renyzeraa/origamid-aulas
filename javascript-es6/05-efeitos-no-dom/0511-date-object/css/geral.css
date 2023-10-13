@@ -1,3 +1,8 @@
+:root {
+  --font-playflair: 'Playfair Display SC', georgia;
+  --font-ibmplex: 'IBM Plex Mono', monospace;
+}
+
 body, h1, h2, ul, li, p, dd, dt, dl {
   margin: 0px;
   padding: 0px;
@@ -10,6 +15,10 @@ img {
 
 ul {
   list-style: none;
+}
+
+a, button {
+  cursor: pointer;
 }
 
 body {
@@ -42,7 +51,7 @@ body {
   margin-right: 10px;
   color: #222;
   text-decoration: none;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--font-ibmplex);
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.875rem;
@@ -61,7 +70,7 @@ body {
 }
 
 .titulo {
-  font-family: 'Playfair Display SC', georgia;
+  font-family: var(--font-playflair);
   font-size: 6rem;
   line-height: 1;
   font-weight: 400;
@@ -70,7 +79,7 @@ body {
 }
 
 .animais h2 {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--font-ibmplex);
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: .1em;
@@ -130,7 +139,7 @@ body {
 }
 
 .faq-lista dt {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--font-ibmplex);
   font-weight: bold;
   margin-top: 2rem;
   margin-bottom: .5rem;
@@ -182,7 +191,7 @@ body {
 
 .copy p {
   padding: 20px;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--font-ibmplex);
   font-weight: bold;
 }
 
@@ -290,19 +299,4 @@ body {
 .js [data-anime="scroll"].ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);
-}
-
-[data-semana]::after {
-  display: inline-block;
-  content: '';
-  width: 6px;
-  height: 6px;
-  background: #E54;
-  border-radius: 50%;
-  margin-left: 4px;
-  border: 2px solid #000;
-}
-
-[data-semana].aberto::after {
-  background: #3F4;
 }
