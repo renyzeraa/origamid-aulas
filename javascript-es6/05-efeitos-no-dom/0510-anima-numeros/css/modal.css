@@ -52,13 +52,13 @@
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
   font-size: 1.2rem;
   color: white;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--font-ibmplex);
   cursor: pointer;
 }
 
 
 .form-container .label-form {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--font-ibmplex);
   font-weight: bold;
   display: block;
   margin: 1rem 0 .5rem 0;
@@ -79,7 +79,7 @@
   border-radius: 4px;
   font-size: 1rem;
   color: white;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--font-ibmplex);
   font-weight: bold;
   cursor: pointer;
 }
