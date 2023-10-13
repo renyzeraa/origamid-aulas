@@ -1,43 +1,42 @@
 export default function initTooltip() {
-  const tooltips = document.querySelectorAll('[data-tooltip]');
-
-  tooltips.forEach((item) => {
-    item.addEventListener('mouseover', onMouseOver);
-  })
+  let aTooltips = document.querySelectorAll('[data-tooltip]');
+  aTooltips = Array.from(aTooltips);
+  aTooltips.forEach((oTooltip) => {
+    oTooltip.addEventListener('mouseover', onMouseOver);
+  });
   
-  function onMouseOver(event) {
-    const tooltipBox = criarTooltipBox(this);
-    
-    onMouseMove.tooltipBox = tooltipBox;
-    this.addEventListener('mousemove', onMouseMove);
-  
-    onMouseLeave.tooltipBox = tooltipBox;
+  function onMouseOver(oEv){
+    const oDivTooltip = criarTooltipBox(this);
+    onMouseLeave.oDivTooltip = oDivTooltip;
+    this.addEventListener('mousemove', onMouseMove)
+    onMouseMove.oDivTooltip = oDivTooltip;
     onMouseLeave.element = this;
     this.addEventListener('mouseleave', onMouseLeave);
   }
   
+  function criarTooltipBox(oEl) {
+    const oDivTooltip = document.createElement('div');
+    const text = oEl.getAttribute('aria-label');
+    oDivTooltip.classList.add('tooltip');
+    oDivTooltip.innerText = text;
+    document.body.appendChild(oDivTooltip);
+    return oDivTooltip;
+  }
+  
   const onMouseLeave = {
-    handleEvent() {
-      this.tooltipBox.remove();
+    handleEvent (oEv){
+      this.oDivTooltip.remove();
       this.element.removeEventListener('mouseleave', onMouseLeave);
       this.element.removeEventListener('mousemove', onMouseMove);
     }
-  }
+  };
   
   const onMouseMove = {
-    handleEvent(event) {
-      this.tooltipBox.style.top = event.pageY + 20 + 'px';
-      this.tooltipBox.style.left = event.pageX + 20 + 'px';
+    handleEvent (oEv){
+      this.oDivTooltip.style.top = oEv.pageY + 20 + 'px';
+      this.oDivTooltip.style.left = oEv.pageX + 20 + 'px';
     }
   }
-  
-  function criarTooltipBox(element) {
-    const tooltipBox = document.createElement('div');
-    const text = element.getAttribute('aria-label');
-    tooltipBox.classList.add('tooltip');
-    tooltipBox.innerText = text;
-    document.body.appendChild(tooltipBox);
-    return tooltipBox;
-  }
 }
+
 

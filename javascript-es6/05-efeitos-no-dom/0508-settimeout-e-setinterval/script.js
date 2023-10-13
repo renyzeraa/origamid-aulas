@@ -8,14 +8,14 @@ function mudarClasse() {
 // Crie um cronometro utilizando o setInterval. Deve ser possível
 // iniciar, pausar e resetar (duplo clique no pausar).
 const iniciar = document.querySelector('.iniciar');
-const pausar = document.querySelector('.pausar');
-const tempo = document.querySelector('.tempo');
+const pausar  = document.querySelector('.pausar');
+const tempo   = document.querySelector('.tempo');
 
 iniciar.addEventListener('click', iniciaTempo);
 pausar.addEventListener('click', pausarTempo);
 pausar.addEventListener('dblclick', resetTempo);
 
-let i = 0;
+let i     = 0;
 let timer = null;
 
 function iniciaTempo() {
