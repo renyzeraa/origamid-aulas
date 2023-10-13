@@ -300,3 +300,18 @@ body {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
+
+[data-semana]::after {
+ display: inline-block;
+ content: '';
+ width: 6px;
+ height: 6px;
+ border-radius: 50%;
+ background: #E54;
+ margin-left: 4px;
+ border: 2px solid #222;
+}
+
+[data-semana].aberto::after {
+  background: #3f4;
+}
