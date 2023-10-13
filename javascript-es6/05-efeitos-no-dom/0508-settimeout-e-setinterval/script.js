@@ -1,7 +1,7 @@
 // Mude a cor da tela para azul e depois para vermelho a cada 2s.
-// function mudarClasse() {
-//   document.body.classList.toggle('active');
-// }
+function mudarClasse() {
+  document.body.classList.toggle('active');
+}
 
 // setInterval(mudarClasse, 2000);
 
@@ -11,14 +11,14 @@ const iniciar = document.querySelector('.iniciar');
 const pausar = document.querySelector('.pausar');
 const tempo = document.querySelector('.tempo');
 
-iniciar.addEventListener('click', iniciarTempo);
+iniciar.addEventListener('click', iniciaTempo);
 pausar.addEventListener('click', pausarTempo);
-pausar.addEventListener('dblclick', resetarTempo);
+pausar.addEventListener('dblclick', resetTempo);
 
 let i = 0;
-let timer;
+let timer = null;
 
-function iniciarTempo() {
+function iniciaTempo() {
   timer = setInterval(() => {
     tempo.innerText = i++;
   }, 100);
@@ -30,7 +30,7 @@ function pausarTempo() {
   iniciar.removeAttribute('disabled');
 }
 
-function resetarTempo() {
+function resetTempo() {
   tempo.innerText = 0;
   i = 0;
 }
