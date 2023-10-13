@@ -12,6 +12,10 @@ ul {
   list-style: none;
 }
 
+a, button {
+  cursor: pointer;
+}
+
 body {
   background: #faf6ed;
   color: #222;
