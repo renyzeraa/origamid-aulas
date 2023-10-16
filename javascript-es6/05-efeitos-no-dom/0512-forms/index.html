@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Forms</title>
 </head>
+
 <body>
 
   <style>
@@ -16,11 +18,14 @@
       margin-bottom: .5rem;
       margin-top: 1rem;
     }
+
     form {
       max-width: 400px;
       margin: 0 auto;
     }
-    input, textarea {
+
+    input,
+    textarea {
       width: 100%;
       box-sizing: border-box;
       padding: .5rem;
@@ -28,9 +33,11 @@
       font-size: 1rem;
       margin-bottom: .5rem;
     }
+
     textarea {
       height: 150px;
     }
+
     .invalido {
       border-color: red;
     }
@@ -45,15 +52,27 @@
     <span class="erro"></span>
     <label for="mensagem">Mensagem</label>
     <textarea name="mensagem" id="mensagem"></textarea>
+    <!-- <input type="submit"> -->
   </form>
-<script>
-  const contato = document.querySelector('#contato');
-  const dados = {};
-  function handleChange(event) {
-    dados[event.target.name] = event.target.value;
-    console.log(dados);
-  }
-  contato.addEventListener('change', handleChange);
-</script>
+  <span class="texto"></span>
+  <script>
+    const oFormContato = document.getElementById('contato');
+    const texto = document.querySelector('.texto');
+
+    function handleKeyUp(event) {
+      const target = event.target;
+      console.log(target.value)
+      if (target.classList.contains('invalido')) {
+        target.classList.remove('invalido');
+      }
+      if (!target.checkValidity()) {
+        target.classList.add('invalido');
+        target.setCustomValidity('Este campo é muito importante');
+        // target.nextElementSibling.innerText = target.validationMessage;
+      }
+    }
+    oFormContato.addEventListener('change', handleKeyUp);
+  </script>
 </body>
+
 </html>
