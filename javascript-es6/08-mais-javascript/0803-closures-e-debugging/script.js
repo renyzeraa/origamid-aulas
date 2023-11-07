@@ -2,7 +2,7 @@
 
 let item1 = 1; 
 function funcao1() { 
-  let item2 = 2;  // clojures , como se fosse uma mochila que tem acesso ao que esta aqui dentro
+  let item2 = 2;  // closures , como se fosse uma mochila que tem acesso ao que esta aqui dentro
   function funcao2() { 
     let item3 = 3;   // primeiro escopo
     console.log(item1); 
