@@ -17,3 +17,17 @@ $('.abrir-modal').click(function () {
     $(this).text('Abrir Modal')
   }
 })
+
+$('.btn').click(function () {
+  $('.modal').slideUp(800)
+})
+$('.abrir-modal').click(function () {
+  $('.modal').slideDown(2000)
+})
+
+$('.abrir-modal').click(function () {
+  $('.modal').animate({
+    width: 320,
+    height: 280
+  })
+})
