@@ -1,14 +1,16 @@
 # Arquivos usados para estudo
 
+Repositório para estudos do curso de front-end da (Origamid)[https://www.origamid.com/]
+
 ## Curso Origamid - Front-end
 
--   Css Flex-box
--   Css Avançado
--   Css Grid
--   Css Sass/Scss
--   Html + Css
--   JavaScript ES6+
--   jQuery + JavaScript
+- Css Flex-box ✅
+- Css Avançado ✅
+- Css Grid ✅
+- Css Sass/Scss ✅
+- Html + Css ✅
+- JavaScript ES6+ ✅
+- jQuery + JavaScript ✅
 
 ## Contact
 
