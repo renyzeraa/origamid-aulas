@@ -1,6 +1,6 @@
 # Arquivos usados para estudo
 
-Repositório para estudos do curso de front-end da (Origamid)[https://www.origamid.com/]
+Repositório para estudos do curso de front-end da [Origamid](https://www.origamid.com/)
 
 ## Curso Origamid - Front-end
 
