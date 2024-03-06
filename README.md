@@ -11,6 +11,7 @@ Repositório para estudos do curso de front-end da [Origamid](https://www.origam
 - Html + Css ✅
 - JavaScript ES6+ ✅
 - jQuery + JavaScript ✅
+- React.js + Redux ✅
 
 ## Contact
 
